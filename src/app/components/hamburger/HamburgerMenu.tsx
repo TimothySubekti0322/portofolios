@@ -26,14 +26,6 @@ const HamburgerMenu: React.FC = () => {
         <ul className="flex flex-col p-4 space-y-2 md:text-2xl md:space-y-3">
           <li>
             <a
-              href="#home"
-              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
-            >
-              about
-            </a>
-          </li>
-          <li>
-            <a
               href="#about"
               className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
             >
@@ -42,10 +34,26 @@ const HamburgerMenu: React.FC = () => {
           </li>
           <li>
             <a
-              href="#services"
+              href="#skills"
               className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
             >
-              Services
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experiences"
+              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+            >
+              Experiences
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+            >
+              Projects
             </a>
           </li>
           <li>

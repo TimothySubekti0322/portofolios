@@ -12,7 +12,7 @@ const Hero = () => {
         alt="Timothy"
         className="w-[80%] md:w-[60%] xl:w-[35%]"
       />
-      <div className="flex flex-col items-center md:items-start">
+      <div className="flex flex-col items-center xl:items-start">
         <p
           className={`mt-4 ${roboto_mono.className} font-semibold text-xl md:text-4xl xl:text-2xl 2xl:text-4xl`}
         >
@@ -26,7 +26,7 @@ const Hero = () => {
         <div
           className={`flex flex-row items-center ${roboto_mono.className} mt-2 font-medium md:text-2xl md:mt-4 xl:text-xl 2xl:text-3xl`}
         >
-          <p className="mr-2">I Am</p>
+          <p className="mr-3 2xl:mr-4">I Am</p>
           <TypewriterComponent
             options={{
               strings: ["Software Engineer", "Mobile Developer"],
@@ -51,7 +51,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <button className="mt-8 md:mt-16 xl:mt-8 2xl:mt-14 rounded-lg w-[35%] py-3 md:py-5 xl:py-3 mb-10 xl:mb-0 transition-transform transform bg-[#00bd95] active:bg-[#009B73] active:translate-y-1 focus:outline-none shadow-md shadow-[#00bd95] font-medium md:text-xl xl:text-base 2xl:text-xl">
+        <button className="mt-8 md:mt-16 xl:mt-8 2xl:mt-14 rounded-lg w-[35%] py-3 md:py-5 xl:py-3 xl:mb-0 transition-transform transform bg-[#00bd95] active:bg-[#009B73] active:translate-y-1 focus:outline-none shadow-md shadow-[#00bd95] font-medium md:text-xl xl:text-base 2xl:text-xl">
           My Resume
         </button>
       </div>

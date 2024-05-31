@@ -1,0 +1,24 @@
+/* styles/globals.css or components/ProjectCard.module.css */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.transition-transform {
+  transition: transform 0.7s;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.flipped .transform-style-preserve-3d {
+  transform: rotateY(180deg);
+}
+
+.rotateY-180 {
+  transform: rotateY(180deg);
+}
