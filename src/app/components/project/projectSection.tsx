@@ -16,7 +16,10 @@ import Projects from "@/static/project";
 
 const ProjectSection = () => {
   return (
-    <div className="min-h-screen w-screen pt-28 md:pt-40 pb-36 xl:pb-44">
+    <div
+      id="projects"
+      className="min-h-screen w-screen pt-28 md:pt-40 pb-36 xl:pb-44"
+    >
       <p
         className={`text-center ${roboto_mono.className} font-bold text-xl md:text-3xl text-[#03B18D]`}
       >

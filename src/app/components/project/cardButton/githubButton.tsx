@@ -3,7 +3,7 @@ import Image from "next/image";
 import PROJECT_IMAGES from "@/static/image/projectImage";
 import type { CardButtonProps } from "./cardButton.type";
 
-const GithubButton: React.FC<CardButtonProps> = ({ url, size }) => {
+const GithubButton: React.FC<CardButtonProps> = ({ url }) => {
   const handleButtonClick = (
     url: string,
     event: React.MouseEvent<HTMLButtonElement>
@@ -18,7 +18,7 @@ const GithubButton: React.FC<CardButtonProps> = ({ url, size }) => {
     >
       <Image
         src={PROJECT_IMAGES.github}
-        className={`w-${size} h-${size}`}
+        className={`w-10 h-10 2xl:w-12 2xl:h-12`}
         alt="github"
       />
     </button>

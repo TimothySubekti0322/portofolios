@@ -16,7 +16,11 @@ const WebButton: React.FC<CardButtonProps> = ({ url }) => {
       className="px-3 py-3 rounded-full bg-[#EEEEEE] hover:bg-[#999999] focus:bg-[#999999]"
       onClick={(e) => handleButtonClick(url, e)}
     >
-      <Image src={PROJECT_IMAGES.web} className="w-10 h-10" alt="github" />
+      <Image
+        src={PROJECT_IMAGES.web}
+        className="w-10 h-10 2xl:w-12 2xl:h-12"
+        alt="github"
+      />
     </button>
   );
 };

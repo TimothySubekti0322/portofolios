@@ -60,9 +60,9 @@ const ProjectCard: React.FC<ProjectMobileProps> = ({
               ))}
             </div>
             <div className="flex flex-row justify-center items-center gap-x-[10%] mt-8">
-              {github && <GithubButton size="10" url={github} />}
-              {android && <AndroidButton size="10" url={android} />}
-              {web && <WebButton size="10" url={web} />}
+              {github && <GithubButton  url={github} />}
+              {android && <AndroidButton  url={android} />}
+              {web && <WebButton url={web} />}
             </div>
           </div>
         </div>

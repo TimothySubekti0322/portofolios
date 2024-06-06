@@ -8,7 +8,7 @@ import TechCard from "./techCard";
 
 const TechSkill = () => {
   return (
-    <div className="min-h-screen w-screen pt-28">
+    <div id="skills" className="min-h-screen w-screen pt-28">
       <p
         className={`text-center ${roboto_mono.className} font-bold text-xl md:text-3xl text-[#03B18D]`}
       >

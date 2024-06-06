@@ -32,10 +32,10 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
           }`}
         />
         {isHovered && (
-          <div className="absolute inset-0 flex justify-center items-center gap-x-4">
-            {github && <GithubButton size="8" url={github} />}
-            {android && <AndroidButton size="8" url={android} />}
-            {web && <WebButton size="8" url={web} />}
+          <div className="absolute inset-0 flex justify-center items-center gap-x-10">
+            {github && <GithubButton url={github} />}
+            {android && <AndroidButton url={android} />}
+            {web && <WebButton url={web} />}
           </div>
         )}
       </div>
