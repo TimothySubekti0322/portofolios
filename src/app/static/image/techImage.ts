@@ -18,6 +18,7 @@ import postman from "@/assets/tech/postman.png";
 import prisma from "@/assets/tech/prisma.png";
 import jest from "@/assets/tech/jest.png";
 import firebase from "@/assets/tech/firebase.png";
+import bootstrap from "@/assets/tech/bootstrap.png";
 
 const TECH_IMAGES = {
   typescript,
@@ -40,6 +41,7 @@ const TECH_IMAGES = {
   prisma,
   jest,
   firebase,
+  bootstrap
 };
 
 export default TECH_IMAGES;

@@ -27,7 +27,7 @@ const TechSkill = () => {
         <TechCard image={TECH_IMAGES.java} name="Java" />
         <TechCard image={TECH_IMAGES.c} name="C" />
         <TechCard image={TECH_IMAGES.php} name="PHP" />
-        <TechCard image={TECH_IMAGES.clojure} name="Clojure" />
+        {/* <TechCard image={TECH_IMAGES.clojure} name="Clojure" /> */}
         <TechCard image={TECH_IMAGES.postgresql} name="PostgreSQL" />
         <TechCard image={TECH_IMAGES.mongodb} name="MongoDB" />
         <TechCard image={TECH_IMAGES.mysql} name="MySQL" />
@@ -36,6 +36,7 @@ const TechSkill = () => {
         <TechCard image={TECH_IMAGES.laravel} name="Laravel" />
         <TechCard image={TECH_IMAGES.codeigniter} name="Codeigniter" />
         <TechCard image={TECH_IMAGES.node} name="Node.js" />
+        <TechCard image={TECH_IMAGES.bootstrap} name="Bootstrap" />
         <TechCard image={TECH_IMAGES.tailwindcss} name="Tailwindcss" />
         <TechCard image={TECH_IMAGES.prisma} name="Prisma" />
         <TechCard image={TECH_IMAGES.postman} name="Postman" />
