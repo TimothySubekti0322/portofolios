@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectMobileProps> = ({
       onClick={handleFlip}
     >
       <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d">
-        <div className="absolute w-full h-full backface-hidden bg-[#313A54] rounded-xl px-4 py-4 md:px-5">
+        <div className="absolute w-full h-full backface-hidden dark:bg-[#313A54] bg-[#cecfdb] rounded-xl px-4 py-4 md:px-5">
           <Image src={mobileImage} alt={title} className="rounded-xl" />
           <div className={`${roboto_mono.className} mt-4`}>
             <p className="font-bold text-xl text-[#03B18D] md:text-2xl">
@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectMobileProps> = ({
             <p className="mt-2 text-[0.9rem] md:text-lg">{description}</p>
           </div>
         </div>
-        <div className="absolute w-full h-full backface-hidden transform rotateY-180 bg-[#313A54] px-4 py-4 rounded-xl">
+        <div className="absolute w-full h-full backface-hidden transform rotateY-180 dark:bg-[#313A54] bg-[#cecfdb] px-4 py-4 rounded-xl">
           <div className={`${roboto_mono.className} mt-4 text-center`}>
             <p className="font-bold text-xl text-[#03B18D] md:text-2xl">
               Tech Stack
@@ -60,8 +60,8 @@ const ProjectCard: React.FC<ProjectMobileProps> = ({
               ))}
             </div>
             <div className="flex flex-row justify-center items-center gap-x-[10%] mt-8">
-              {github && <GithubButton  url={github} />}
-              {android && <AndroidButton  url={android} />}
+              {github && <GithubButton url={github} />}
+              {android && <AndroidButton url={android} />}
               {web && <WebButton url={web} />}
             </div>
           </div>

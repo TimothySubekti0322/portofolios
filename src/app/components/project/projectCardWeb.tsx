@@ -18,7 +18,7 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="w-full max-w-[45%] rounded-xl bg-[#313A54] p-4 h-full flex flex-col">
+    <div className="w-full max-w-[45%] rounded-xl dark:bg-[#313A54] bg-[#cecfdb] text-white p-4 h-full flex flex-col">
       <div
         className="relative flex-grow"
         onMouseEnter={() => setIsHovered(true)}
@@ -41,7 +41,9 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
       </div>
       <div className={`${roboto_mono.className} mt-4 flex-grow`}>
         <p className="font-bold text-xl text-[#03B18D]">{title}</p>
-        <p className="mt-2 text-[0.9rem]">{description}</p>
+        <p className="mt-2 text-[0.9rem] text-[#313A54] dark:text-white">
+          {description}
+        </p>
       </div>
       <div className="flex flex-row mt-4 flex-wrap gap-x-4 gap-y-4 grow">
         {techStack.map((tech, index) => (

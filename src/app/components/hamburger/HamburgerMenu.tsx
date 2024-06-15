@@ -14,12 +14,12 @@ const HamburgerMenu: React.FC = () => {
         className={`hamburger-button ${isOpen ? "open" : ""}`}
         onClick={toggleMenu}
       >
-        <span className="hamburger-line"></span>
-        <span className="hamburger-line"></span>
-        <span className="hamburger-line"></span>
+        <span className="hamburger-line dark:bg-white bg-black"></span>
+        <span className="hamburger-line dark:bg-white bg-black"></span>
+        <span className="hamburger-line dark:bg-white bg-black"></span>
       </button>
       <nav
-        className={`absolute top-[50px] md:top-[60px] right-0 mt-2 w-48 md:w-64 bg-white shadow-lg rounded-md transition-all duration-300 ease-in-out ${
+        className={`absolute top-[50px] md:top-[60px] right-0 mt-2 w-48 md:w-64 dark:bg-white bg-black shadow-lg rounded-md transition-all duration-300 ease-in-out ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -27,7 +27,7 @@ const HamburgerMenu: React.FC = () => {
           <li>
             <a
               href="#about"
-              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
             >
               About
             </a>
@@ -35,7 +35,7 @@ const HamburgerMenu: React.FC = () => {
           <li>
             <a
               href="#skills"
-              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
             >
               Skills
             </a>
@@ -43,7 +43,7 @@ const HamburgerMenu: React.FC = () => {
           <li>
             <a
               href="#experiences"
-              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
             >
               Experiences
             </a>
@@ -51,7 +51,7 @@ const HamburgerMenu: React.FC = () => {
           <li>
             <a
               href="#projects"
-              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
             >
               Projects
             </a>
@@ -59,7 +59,7 @@ const HamburgerMenu: React.FC = () => {
           <li>
             <a
               href="#contact"
-              className="block px-4 py-2 text-black hover:bg-gray-200 rounded"
+              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
             >
               Contact
             </a>

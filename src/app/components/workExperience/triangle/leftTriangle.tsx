@@ -7,7 +7,7 @@ interface LeftTriangleProps {
 const LeftTriangle: React.FC<LeftTriangleProps> = ({ size }) => {
   return (
     <div
-      className={`w-0 h-0 border-t-transparent border-b-transparent border-[#313A54]`}
+      className={`w-0 h-0 border-t-transparent border-b-transparent dark:border-[#313A54] dark:border-t-transparent dark:border-b-transparent border-[#cecfdb]`}
       style={{
         borderTopWidth: size,
         borderBottomWidth: size,

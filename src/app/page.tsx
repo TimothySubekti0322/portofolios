@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
-    <div className="bg-[#21272F] overflow-hidden">
+    <div className="dark:bg-[#21272F] bg-[#FFFFFF] overflow-hidden dark:text-white text-[#21272F]">
       <Navbar />
       <Hero />
       <TechSkill />

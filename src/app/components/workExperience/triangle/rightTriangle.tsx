@@ -7,7 +7,7 @@ interface RightTriangleProps {
 const RightTriangle: React.FC<RightTriangleProps> = ({ size }) => {
   return (
     <div
-      className={`w-0 h-0 border-t-transparent border-b-transparent border-[#313A54]`}
+      className={`w-0 h-0 border-t-transparent border-b-transparent dark:border-t-transparent dark:border-b-transparent dark:border-[#313A54] border-[#cecfdb]`}
       style={{
         borderTopWidth: size,
         borderBottomWidth: size,

@@ -7,9 +7,9 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer
-      className={`footer bg-[#13171f] text-neutral-content ${roboto_mono.className}`}
+      className={`footer dark:bg-[#13171f] bg-[#313A54] text-white  ${roboto_mono.className}`}
     >
-      <div className="xl:flex flex-row justify-center gap-x-[20%] px-10 pt-10">
+      <div className="xl:flex flex-row justify-center gap-x-[20%] px-10 pt-10 xl:pb-10">
         <div>
           <div className="flex flex-row items-center">
             <Image src={logo} alt="logo" className="w-16 h-16 -ml-4" />
@@ -19,7 +19,9 @@ const Footer = () => {
           <p className="mt-1">velmothy14@gmail.com</p>
         </div>
         <div>
-          <p className="mt-4 text-[#47ceb3] font-bold text-lg xl:mt-0">Social Media</p>
+          <p className="mt-4 text-[#47ceb3] font-bold text-lg xl:mt-0">
+            Social Media
+          </p>
 
           <a
             href="https://github.com/TimothySubekti0322"
@@ -50,8 +52,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="border-t-2 border-[#888888] mt-6 flex items-center justify-center py-4">
-        Copyright © 2024
+      <div className="border-t-2 border-[#888888] mt-6 flex items-center justify-center py-4 w-full xl:w-fit">
+        © Copyright 2024 / Timothy
       </div>
     </footer>
   );

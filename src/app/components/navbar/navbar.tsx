@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import HamburgerMenu from "@components/hamburger/HamburgerMenu";
 import logo from "../../assets/logo.png";
+import ThemeToggle from "../themeToggle/themeToggle";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,24 +32,42 @@ const Navbar = () => {
       <button>
         <Image src={logo} alt="Logo" className="w-[20%] xl:w-16" />
       </button>
-      <div className="flex-row items-center hidden xl:flex xl:gap-x-12">
-        <a className="text-lg hover:text-[#00BD95]" href="#about">
+      <div className="flex-row items-center hidden xl:flex xl:gap-x-12 ">
+        <a
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          href="#about"
+        >
           About
         </a>
-        <a className="text-lg hover:text-[#00BD95]" href="#skills">
+        <a
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          href="#skills"
+        >
           skills
         </a>
-        <a className="text-lg hover:text-[#00BD95]" href="#experiences">
+        <a
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          href="#experiences"
+        >
           experiences
         </a>
-        <a className="text-lg hover:text-[#00BD95]" href="#projects">
+        <a
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          href="#projects"
+        >
           projects
         </a>
-        <a className="text-lg hover:text-[#00BD95]" href="#contact">
+        <a
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          href="#contact"
+        >
           contact
         </a>
       </div>
-      <HamburgerMenu />
+      <div className="flex items-center gap-x-4">
+        <ThemeToggle />
+        <HamburgerMenu />
+      </div>
     </div>
   );
 };

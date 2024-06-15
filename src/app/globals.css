@@ -6,6 +6,19 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --toggle-light-bg: #ffffff;
+  --toggle-dark-bg: #000000;
+}
+
+.toggle {
+  --tglbg: var(--toggle-light-bg);
+  transition: background-color 0.5s;
+  height: 2rem;
+  width: 3.5rem;
+}
+
+.dark .toggle {
+  --tglbg: var(--toggle-dark-bg);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +37,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark body {
+  transition: background-color 0.5s, color 0.5s;
 }
 
 @layer utilities {

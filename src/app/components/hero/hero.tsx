@@ -17,7 +17,7 @@ const Hero = () => {
       />
       <div className="flex flex-col items-center xl:items-start">
         <p
-          className={`mt-4 ${roboto_mono.className} font-semibold text-xl md:text-4xl xl:text-2xl 2xl:text-4xl`}
+          className={`mt-4 ${roboto_mono.className} dark:text-white text-[#21272F] font-semibold text-xl md:text-4xl xl:text-2xl 2xl:text-4xl`}
         >
           Hello, <span className="text-[#00BD95]">I&apos;m</span>
         </p>
@@ -27,7 +27,7 @@ const Hero = () => {
           Timothy Subekti
         </p>
         <div
-          className={`flex flex-row items-center ${roboto_mono.className} mt-2 font-medium md:text-2xl md:mt-4 xl:text-xl 2xl:text-3xl`}
+          className={`flex flex-row items-center ${roboto_mono.className} mt-2 font-medium md:text-2xl md:mt-4 xl:text-xl 2xl:text-3xl dark:text-white text-[#21272F]`}
         >
           <p className="mr-3 2xl:mr-4">I Am</p>
           <TypewriterComponent
