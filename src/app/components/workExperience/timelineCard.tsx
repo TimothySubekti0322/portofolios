@@ -25,18 +25,26 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       } `}
     >
       {/* Circle */}
-      <div className={`${index % 2 == 0 && "xl:hidden"}`}>
+      <div className={`${index % 2 == 0 && "xl:hidden"}`} data-aos="zoom-in">
         <div className="w-7 h-7 md:w-9 md:h-9 rounded-full dark:bg-[#03B18D] bg-[#03B18D] my-auto xl:-ml-4"></div>
       </div>
 
       {/* Triangle */}
-      <div className={`${index % 2 == 0 && "xl:hidden"} ml-[5%] md:ml-[3%]`}>
+      <div
+        className={`${index % 2 == 0 && "xl:hidden"} ml-[5%] md:ml-[3%]`}
+        data-aos="fade-left"
+        data-aos-delay="300"
+        data-aos-anchor={`#section${index}`}
+      >
         <LeftTriangle size={14} />
       </div>
 
       {/* Content */}
       <div
         className={`dark:bg-[#313A54] bg-[#cecfdb]  rounded-xl p-3 md:p-6  ${roboto_mono.className}`}
+        data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+        data-aos-delay="300"
+        id={`section${index}`}
       >
         <p
           className={`dark:text-[#efefef] text-[#03B18D] font-semibold ${roboto_mono.className} text-xl md:text-3xl xl:text-2xl`}
@@ -63,12 +71,18 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
         className={`${
           index % 2 == 1 ? "xl:hidden" : "xl:block"
         } hidden md:mr-[3%] `}
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-anchor={`#section${index}`}
       >
         <RightTriangle size={14} />
       </div>
 
       {/* Circle */}
-      <div className={`${index % 2 == 1 ? "xl:hidden" : "xl:block"} hidden`}>
+      <div
+        className={`${index % 2 == 1 ? "xl:hidden" : "xl:block"} hidden`}
+        data-aos="zoom-in"
+      >
         <div className="w-7 h-7 md:w-9 md:h-9 rounded-full dark:bg-[#03B18D] bg-[#03B18D] my-auto xl:-mr-5"></div>
       </div>
     </div>

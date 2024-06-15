@@ -2,19 +2,25 @@
 import { useEffect, useState } from "react";
 
 const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState<string | null>(
-    typeof window !== "undefined" && localStorage.getItem("theme")
-      ? localStorage.getItem("theme")
-      : window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light"
-  );
-
-  console.log(theme);
+  // const [theme, setTheme] = useState<string | null>(
+  //   typeof window !== "undefined" && localStorage.getItem("theme")
+  //     ? localStorage.getItem("theme")
+  //     : window.matchMedia &&
+  //       window.matchMedia("(prefers-color-scheme: dark)").matches
+  //     ? "dark"
+  //     : "light"
+  // );
+  const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    if (localStorage.getItem("theme")) {
+      console.log(localStorage.getItem("theme"));
+      setTheme(localStorage.getItem("theme"));
+    } else {
+      setTheme(mediaQuery.matches ? "dark" : "light");
+    }
+
     const handleChange = (e: MediaQueryListEvent) => {
       if (localStorage.getItem("theme") === null) {
         setTheme(e.matches ? "dark" : "light");

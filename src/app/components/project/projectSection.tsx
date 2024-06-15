@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { roboto_mono } from "@/fonts";
 import ProjectCard from "./projectCard";
 // Import Swiper React components
@@ -14,7 +14,13 @@ import { Pagination, Navigation } from "swiper/modules";
 import ProjectCardWeb from "./projectCardWeb";
 import Projects from "@/static/project";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const ProjectSection = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div
       id="projects"
@@ -22,11 +28,13 @@ const ProjectSection = () => {
     >
       <p
         className={`text-center ${roboto_mono.className} font-bold text-xl md:text-3xl text-[#03B18D]`}
+        data-aos="zoom-in-up"
       >
         MY WORKS
       </p>
       <p
         className={`text-center ${roboto_mono.className} font-bold text- md:text-3xl`}
+        data-aos="zoom-in-up"
       >
         Project
       </p>
@@ -62,6 +70,7 @@ const ProjectSection = () => {
         {Projects.map((project, index) => (
           <ProjectCardWeb
             key={index}
+            index={index}
             title={project.title}
             description={project.description}
             techStack={project.techStack}

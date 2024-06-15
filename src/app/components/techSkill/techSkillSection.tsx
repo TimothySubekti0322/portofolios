@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { roboto_mono } from "@/fonts";
 import Image from "next/image";
 import TECH_IMAGES from "@/static/image/techImage";
 import TechCard from "./techCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Import Image
 
 const TechSkill = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div id="skills" className="min-h-screen w-screen pt-28">
       <p
         className={`text-center ${roboto_mono.className} font-bold text-xl md:text-3xl text-[#03B18D]`}
+        data-aos="zoom-in-up"
       >
         WHAT I CAN DO
       </p>
       <p
         className={`text-center ${roboto_mono.className} font-bold text- md:text-3xl`}
+        data-aos="zoom-in-up"
       >
         Skills Set in Technology
       </p>

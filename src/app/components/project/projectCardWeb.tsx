@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { roboto_mono } from "@/fonts";
 import type { ProjectDesktopProps } from "@/static/project";
@@ -6,6 +6,8 @@ import { colorPicker } from "@/utils/techStackColorSelector";
 import AndroidButton from "./cardButton/androidButton";
 import GithubButton from "./cardButton/githubButton";
 import WebButton from "./cardButton/webButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
   title,
@@ -15,10 +17,17 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
   android,
   web,
   desktopImage,
+  index,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    AOS.init();
+  });
   return (
-    <div className="w-full max-w-[45%] rounded-xl dark:bg-[#313A54] bg-[#cecfdb] text-white p-4 h-full flex flex-col">
+    <div
+      className="w-full max-w-[45%] rounded-xl dark:bg-[#313A54] bg-[#cecfdb] text-white p-4 h-full flex flex-col"
+      data-aos={index % 2 == 0 ? "flip-left" : "flip-right"}
+    >
       <div
         className="relative flex-grow"
         onMouseEnter={() => setIsHovered(true)}

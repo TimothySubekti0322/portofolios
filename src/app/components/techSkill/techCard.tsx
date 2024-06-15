@@ -1,6 +1,9 @@
-import { StaticImageData } from "next/image";
-import React from "react";
-import Image from "next/image";
+"use client";
+
+import Image, { StaticImageData } from "next/image";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface TechCardProps {
   image: StaticImageData;
@@ -8,8 +11,14 @@ interface TechCardProps {
 }
 
 const TechCard: React.FC<TechCardProps> = ({ image, name }) => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
-    <button className="dark:bg-[#313A54] bg-[#cecfdb] p-[5%] rounded-lg w-[30%] xl:w-[17%] group overflow-hidden relative">
+    <button
+      className="dark:bg-[#313A54] bg-[#cecfdb] p-[5%] rounded-lg w-[30%] xl:w-[17%] group overflow-hidden relative"
+      data-aos="zoom-in"
+    >
       <Image
         src={image}
         alt={name}

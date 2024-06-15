@@ -12,6 +12,7 @@ export interface Projects {
 
 export interface ProjectDesktopProps extends Projects {
   desktopImage: StaticImageData;
+  index: number;
 }
 
 export interface ProjectMobileProps extends Projects {
