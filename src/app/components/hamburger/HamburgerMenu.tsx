@@ -8,6 +8,11 @@ const HamburgerMenu: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const menuClick = (section: string) => {
+    setIsOpen(false);
+    window.location.href = `#${section}`;
+  };
+
   return (
     <div className="hamburger-menu-container">
       <button
@@ -25,44 +30,44 @@ const HamburgerMenu: React.FC = () => {
       >
         <ul className="flex flex-col p-4 space-y-2 md:text-2xl md:space-y-3">
           <li>
-            <a
-              href="#about"
-              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
+            <button
+              className="px-4 py-2 dark:text-black text-white hover:bg-[#333333] dark:hover:bg-gray-300 active:bg-[#333333] dark:active:bg-gray-200 rounded w-full flex justify-start"
+              onClick={() => menuClick("about")}
             >
               About
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#skills"
-              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
+            <button
+              className="px-4 py-2 dark:text-black text-white hover:bg-[#333333] dark:hover:bg-gray-300 active:bg-[#333333] dark:active:bg-gray-200 rounded w-full flex justify-start"
+              onClick={() => menuClick("skills")}
             >
               Skills
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#experiences"
-              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
+            <button
+              className="px-4 py-2 dark:text-black text-white hover:bg-[#333333] dark:hover:bg-gray-300 active:bg-[#333333] dark:active:bg-gray-200 rounded w-full flex justify-start"
+              onClick={() => menuClick("experiences")}
             >
               Experiences
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
+            <button
+              className="px-4 py-2 dark:text-black text-white hover:bg-[#333333] dark:hover:bg-gray-300 active:bg-[#333333] dark:active:bg-gray-200 rounded w-full flex justify-start"
+              onClick={() => menuClick("projects")}
             >
               Projects
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="block px-4 py-2 dark:text-black text-white hover:bg-gray-200 rounded"
+            <button
+              className="px-4 py-2 dark:text-black text-white hover:bg-[#333333] dark:hover:bg-gray-300 active:bg-[#333333] dark:active:bg-gray-200 rounded w-full flex justify-start"
+              onClick={() => menuClick("contact")}
             >
               Contact
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
