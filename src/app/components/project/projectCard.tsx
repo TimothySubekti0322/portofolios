@@ -1,5 +1,5 @@
 // components/ProjectCard.tsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Guestify from "@/assets/project/guestify.png";
 import Image from "next/image";
 import { roboto_mono } from "@/fonts";
@@ -9,6 +9,8 @@ import AndroidButton from "./cardButton/androidButton";
 import WebButton from "./cardButton/webButton";
 import type { ProjectMobileProps } from "@/static/project";
 import { colorPicker } from "@/utils/techStackColorSelector";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectCard: React.FC<ProjectMobileProps> = ({
   title,
@@ -25,12 +27,17 @@ const ProjectCard: React.FC<ProjectMobileProps> = ({
     setIsFlipped(!isFlipped);
   };
 
+  useEffect(() => {
+    AOS.init();
+  },[]);
+
   return (
     <div
       className={`w-full  rounded-xl perspective-1000 h-[70vh] md:h-[65vh] ${
         isFlipped ? "flipped" : ""
       }`}
       onClick={handleFlip}
+      data-aos="fade-up"
     >
       <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d">
         <div className="absolute w-full h-full backface-hidden dark:bg-[#313A54] bg-[#cecfdb] rounded-xl px-4 py-4 md:px-5">
@@ -47,7 +54,7 @@ const ProjectCard: React.FC<ProjectMobileProps> = ({
             <p className="font-bold text-xl text-[#03B18D] md:text-2xl">
               Tech Stack
             </p>
-            <div className="mt-6 text-sm md:text-base flex flex-row gap-x-3 gap-y-3 flex-wrap justify-center">
+            <div className="mt-6 text-sm md:text-base flex flex-row gap-x-3 gap-y-3 flex-wrap justify-center text-white">
               {techStack.map((tech, index) => (
                 <p
                   key={index}

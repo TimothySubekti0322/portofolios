@@ -2,37 +2,7 @@
 import { useEffect, useState } from "react";
 
 const ThemeToggle: React.FC = () => {
-  // const [theme, setTheme] = useState<string | null>(
-  //   typeof window !== "undefined" && localStorage.getItem("theme")
-  //     ? localStorage.getItem("theme")
-  //     : window.matchMedia &&
-  //       window.matchMedia("(prefers-color-scheme: dark)").matches
-  //     ? "dark"
-  //     : "light"
-  // );
-  const [theme, setTheme] = useState<string | null>(null);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    if (localStorage.getItem("theme")) {
-      console.log(localStorage.getItem("theme"));
-      setTheme(localStorage.getItem("theme"));
-    } else {
-      setTheme(mediaQuery.matches ? "dark" : "light");
-    }
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      if (localStorage.getItem("theme") === null) {
-        setTheme(e.matches ? "dark" : "light");
-      }
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, []);
+  const [theme, setTheme] = useState<string>("dark");
 
   useEffect(() => {
     if (theme === "dark") {
@@ -49,10 +19,6 @@ const ThemeToggle: React.FC = () => {
   };
 
   return (
-    // <button
-    //   onClick={toggleTheme}
-    //   className="p-2 rounded bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
-    // >
     <label className="cursor-pointer grid place-items-center">
       <input
         type="checkbox"
@@ -62,7 +28,7 @@ const ThemeToggle: React.FC = () => {
         checked={theme === "dark"}
       />
       <svg
-        className="col-start-1 row-start-1 dark:stroke-black dark:fill-black stroke-white fill-white place-items-center ml-[2px]"
+        className="col-start-1 row-start-1 dark:stroke-black dark:fill-black stroke-white fill-white place-items-center ml-[2px] md:max-lg:ml-[5px]"
         xmlns="http://www.w3.org/2000/svg"
         width="14"
         height="14"
@@ -77,7 +43,7 @@ const ThemeToggle: React.FC = () => {
         <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
       </svg>
       <svg
-        className="col-start-2 row-start-1 dark:stroke-black dark:fill-black stroke-white fill-white mr-[2px]"
+        className="col-start-2 row-start-1 dark:stroke-black dark:fill-black stroke-white fill-white mr-[2px] md:max-lg:mr-[5px]"
         xmlns="http://www.w3.org/2000/svg"
         width="14"
         height="14"
@@ -91,7 +57,6 @@ const ThemeToggle: React.FC = () => {
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
       </svg>
     </label>
-    // </button>
   );
 };
 

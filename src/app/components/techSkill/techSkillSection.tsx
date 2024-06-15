@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 const TechSkill = () => {
   useEffect(() => {
     AOS.init();
-  });
+  },[]);
   return (
     <div id="skills" className="min-h-screen w-screen pt-28">
       <p

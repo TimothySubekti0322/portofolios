@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 const Timeline = () => {
   useEffect(() => {
     AOS.init();
-  });
+  },[]);
   return (
     <div className="relative w-full mt-8 md:mt-12 xl:mt-24 2xl:mt-32 px-[8%] pt-2 -pb-8">
       <div

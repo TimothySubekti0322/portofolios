@@ -9,7 +9,7 @@ const Footer = () => {
     <footer
       className={`footer dark:bg-[#13171f] bg-[#313A54] text-white  ${roboto_mono.className}`}
     >
-      <div className="xl:flex flex-row justify-center gap-x-[20%] px-10 pt-10 xl:pb-10">
+      <div className="xl:flex flex-row justify-center gap-x-[20%] px-10 pt-10 xl:pb-10 2xl:px-16">
         <div>
           <div className="flex flex-row items-center">
             <Image src={logo} alt="logo" className="w-16 h-16 -ml-4" />
@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="border-t-2 border-[#888888] mt-6 flex items-center justify-center py-4 w-full xl:w-fit">
+      <div className="border-t-2 border-[#888888] xl:border-0 mt-6 flex items-center justify-center py-4 w-full xl:w-fit">
         © Copyright 2024 / Timothy
       </div>
     </footer>

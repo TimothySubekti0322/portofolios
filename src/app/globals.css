@@ -10,6 +10,10 @@
   --toggle-dark-bg: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .toggle {
   --tglbg: var(--toggle-light-bg);
   transition: background-color 0.5s;
@@ -19,6 +23,13 @@
 
 .dark .toggle {
   --tglbg: var(--toggle-dark-bg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .toggle {
+    height: 2.5rem;
+    width: 4rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

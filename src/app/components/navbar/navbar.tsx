@@ -29,36 +29,36 @@ const Navbar = () => {
           : "bg-transparent xl:backdrop-blur-none"
       }`}
     >
-      <button>
+      <a href="#about">
         <Image src={logo} alt="Logo" className="w-[20%] xl:w-16" />
-      </button>
+      </a>
       <div className="flex-row items-center hidden xl:flex xl:gap-x-12 ">
         <a
-          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] dark:hover:text-[#00BD95] font-semibold"
           href="#about"
         >
           About
         </a>
         <a
-          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] dark:hover:text-[#00BD95] font-semibold"
           href="#skills"
         >
           skills
         </a>
         <a
-          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] dark:hover:text-[#00BD95] font-semibold"
           href="#experiences"
         >
           experiences
         </a>
         <a
-          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] dark:hover:text-[#00BD95]  font-semibold"
           href="#projects"
         >
           projects
         </a>
         <a
-          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] font-semibold"
+          className="dark:text-white text-[#21272F] text-lg 2xl:text-xl hover:text-[#00BD95] dark:hover:text-[#00BD95]  font-semibold"
           href="#contact"
         >
           contact

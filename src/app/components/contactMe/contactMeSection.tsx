@@ -1,30 +1,32 @@
 import React, { useEffect } from "react";
 import { roboto_mono } from "@/fonts";
-import Timeline from "./timeline";
+import Form from "./form";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const WorkExperienceSection = () => {
+const ContactMeSection = () => {
   useEffect(() => {
     AOS.init();
-  }, []);
+  },[]);
   return (
-    <div id="experiences" className="min-h-screen w-screen pt-28 md:pt-36">
+    <div className="min-h-screen w-screen pb-36 xl:pb-44" id="contact">
       <p
         className={`text-center ${roboto_mono.className} font-bold text-xl md:text-3xl text-[#03B18D]`}
-        data-aos="zoom-in-down"
+        data-aos="zoom-in-up"
       >
-        WHAT I HAVE DONE
+        GET IN TOUCH
       </p>
       <p
         className={`text-center ${roboto_mono.className} font-bold text- md:text-3xl`}
-        data-aos="zoom-in-down"
+        data-aos="zoom-in-up"
       >
-        Working Experience
+        Contact Me
       </p>
-      <Timeline />
+
+      {/* Form */}
+      <Form />
     </div>
   );
 };
 
-export default WorkExperienceSection;
+export default ContactMeSection;

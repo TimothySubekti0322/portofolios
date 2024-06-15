@@ -20,7 +20,7 @@ import "aos/dist/aos.css";
 const ProjectSection = () => {
   useEffect(() => {
     AOS.init();
-  });
+  },[]);
   return (
     <div
       id="projects"

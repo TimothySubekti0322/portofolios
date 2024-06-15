@@ -6,6 +6,7 @@ import TechSkill from "./components/techSkill/techSkillSection";
 import WorkExperienceSection from "./components/workExperience/workExperienceSection";
 import ProjectSection from "./components/project/projectSection";
 import Footer from "./components/footer/footer";
+import ContactMeSection from "./components/contactMe/contactMeSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <TechSkill />
       <WorkExperienceSection />
       <ProjectSection />
+      <ContactMeSection />
       <Footer />
     </div>
   );

@@ -22,7 +22,7 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
     AOS.init();
-  });
+  },[]);
   return (
     <div
       className="w-full max-w-[45%] rounded-xl dark:bg-[#313A54] bg-[#cecfdb] text-white p-4 h-full flex flex-col"

@@ -13,7 +13,7 @@ interface TechCardProps {
 const TechCard: React.FC<TechCardProps> = ({ image, name }) => {
   useEffect(() => {
     AOS.init();
-  });
+  },[]);
   return (
     <button
       className="dark:bg-[#313A54] bg-[#cecfdb] p-[5%] rounded-lg w-[30%] xl:w-[17%] group overflow-hidden relative"
