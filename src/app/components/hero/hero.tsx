@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const Hero = () => {
   useEffect(() => {
     AOS.init();
-  },[]);
+  }, []);
   return (
     <div
       id="about"
@@ -67,10 +67,12 @@ const Hero = () => {
         </div>
 
         <button
-          className="mt-8 md:mt-16 xl:mt-8 2xl:mt-14 rounded-lg w-[35%] py-3 md:py-5 xl:py-3 xl:mb-0 transition-transform transform bg-[#00bd95] active:bg-[#009B73] active:translate-y-1 focus:outline-none shadow-md shadow-[#00bd95] font-medium md:text-xl xl:text-base 2xl:text-xl text-white"
+          className="mt-8 md:mt-16 xl:mt-8 2xl:mt-14 rounded-lg w-[35%] py-3 md:py-5 xl:py-3 xl:mb-0 transition-transform transform bg-[#00bd95] active:bg-[#009B73] hover:bg-[#009B73] active:translate-y-1 focus:outline-none shadow-md shadow-[#00bd95] font-medium md:text-xl xl:text-base 2xl:text-xl text-white"
           data-aos="zoom-in-up"
         >
-          My Resume
+          <a href="/Timothy_CV.pdf" download="Timothy_CV.pdf">
+            My Resume
+          </a>
         </button>
       </div>
     </div>
