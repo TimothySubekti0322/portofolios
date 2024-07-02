@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div
       id="about"
-      className="w-full flex flex-col xl:flex-row-reverse items-center justify-center mt-24 xl:px-[7.5%] xl:gap-x-[12.5%] xl:h-screen xl:mt-0 xl:pt-20 2xl:pt-0"
+      className="w-full flex flex-col xl:flex-row-reverse items-center justify-center mt-24 xl:px-[7.5%] xl:gap-x-[12.5%] xl:h-screen xl:mt-0 xl:pt-20 2xl:pt-24 min-[1800px]:pt-0"
     >
       <Image
         src={Timothy}

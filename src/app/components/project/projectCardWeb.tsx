@@ -9,6 +9,9 @@ import WebButton from "./cardButton/webButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { cn } from "@/lib/utils";
+import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+
 const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
   title,
   description,
@@ -22,7 +25,7 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
     AOS.init();
-  },[]);
+  }, []);
   return (
     <div
       className="w-full max-w-[45%] rounded-xl dark:bg-[#313A54] bg-[#cecfdb] text-white p-4 h-full flex flex-col"
@@ -62,7 +65,7 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
               index
             )} rounded-full text-xs`}
           >
-            # {tech}
+            <AnimatedShinyText className={``}># {tech}</AnimatedShinyText>
           </p>
         ))}
       </div>
