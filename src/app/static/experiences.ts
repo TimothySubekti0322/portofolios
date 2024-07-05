@@ -1,10 +1,12 @@
 const Experiences = [
   {
-    title: "Frontend Engineer",
+    title: "Software Engineer",
     company: "PT. Sprint Asia",
     date: "(May 2024 - July 2024)",
     description: [
-      "Technology Used : Typescript, Clojure, React, Styled-div",
+      "Technology Used : Go, Typescript, Clojure, React, Styled-div",
+      "Creating backend engine to integrate Sandeza App with Meta Service using Go",
+      "Creating worker service to retrieve data from database and send it to Meta using Go",
       "Led the UI and feature revamp of the Metabase app.",
       "Successfully increased metabase functionality based on user requirement",
       "Gained proficiency in reading and understanding complex, commercial-grade codebases",

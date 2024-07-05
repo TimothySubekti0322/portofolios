@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 const TechSkill = () => {
   useEffect(() => {
     AOS.init();
-  },[]);
+  }, []);
   return (
     <div id="skills" className="min-h-screen w-screen pt-28">
       <p
@@ -30,6 +30,7 @@ const TechSkill = () => {
         {/* Card 1 */}
         <TechCard image={TECH_IMAGES.typescript} name="Typescript" />
         <TechCard image={TECH_IMAGES.javascript} name="Javascript" />
+        <TechCard image={TECH_IMAGES.go} name="Go" />
         <TechCard image={TECH_IMAGES.python} name="Python" />
         <TechCard image={TECH_IMAGES.java} name="Java" />
         <TechCard image={TECH_IMAGES.c} name="C" />
@@ -38,6 +39,7 @@ const TechSkill = () => {
         <TechCard image={TECH_IMAGES.postgresql} name="PostgreSQL" />
         <TechCard image={TECH_IMAGES.mongodb} name="MongoDB" />
         <TechCard image={TECH_IMAGES.mysql} name="MySQL" />
+        <TechCard image={TECH_IMAGES.firebase} name="Firebase" />
         <TechCard image={TECH_IMAGES.next} name="Next.js" />
         <TechCard image={TECH_IMAGES.react} name="React" />
         <TechCard image={TECH_IMAGES.laravel} name="Laravel" />
@@ -45,10 +47,9 @@ const TechSkill = () => {
         <TechCard image={TECH_IMAGES.node} name="Node.js" />
         <TechCard image={TECH_IMAGES.bootstrap} name="Bootstrap" />
         <TechCard image={TECH_IMAGES.tailwindcss} name="Tailwindcss" />
-        <TechCard image={TECH_IMAGES.prisma} name="Prisma" />
+        {/* <TechCard image={TECH_IMAGES.prisma} name="Prisma" /> */}
         <TechCard image={TECH_IMAGES.postman} name="Postman" />
         <TechCard image={TECH_IMAGES.jest} name="Jest" />
-        <TechCard image={TECH_IMAGES.firebase} name="Firebase" />
       </div>
     </div>
   );

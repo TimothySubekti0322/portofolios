@@ -59,14 +59,14 @@ const ProjectCardWeb: React.FC<ProjectDesktopProps> = ({
       </div>
       <div className="flex flex-row mt-4 flex-wrap gap-x-4 gap-y-4 grow">
         {techStack.map((tech, index) => (
-          <p
+          <div
             key={index}
             className={`px-2 py-1 bg-gradient-to-r ${colorPicker(
               index
             )} rounded-full text-xs`}
           >
             <AnimatedShinyText className={``}># {tech}</AnimatedShinyText>
-          </p>
+          </div>
         ))}
       </div>
     </div>
