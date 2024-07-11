@@ -1,12 +1,25 @@
 const Experiences = [
   {
     title: "Software Engineer",
+    company: "ITB Career Center",
+    date: "(July 2024 - Ongoing)",
+    description: [
+      "Technology Used : Go, Next.js, TypeScript, Tailwind CSS, Material UI, PostgreSQL",
+      "Developed RESTful API using Go",
+      "Succesfully Designed interactive admin dashboard with MUI for improved user experience",
+      "Created responsive ITB Tracer Study page utilizing Tailwind CSS",
+      "Engineered reusable components (navbar, footer, sidebar, etc) for consistent UI",
+      "Implemented unit tests to ensure system functionality and security",
+    ],
+  },
+  {
+    title: "Software Engineer",
     company: "PT. Sprint Asia",
     date: "(May 2024 - July 2024)",
     description: [
       "Technology Used : Go, Typescript, Clojure, React, Styled-div",
-      "Creating backend engine to integrate Sandeza App with Meta Service using Go",
-      "Creating worker service to retrieve data from database and send it to Meta using Go",
+      "Successfuly Creating Backend API to integrate Sandeza App with Meta Service using Go",
+      "Successfuly Creating Go Worker service to consume database request and process the request to send it to Meta",
       "Led the UI and feature revamp of the Metabase app.",
       "Successfully increased metabase functionality based on user requirement",
       "Gained proficiency in reading and understanding complex, commercial-grade codebases",
@@ -61,7 +74,7 @@ const Experiences = [
   {
     title: "IT Project Manager",
     company: "HMIF ITB",
-    date: "(November 2022 - Ongoing)",
+    date: "(November 2022 - May 2024)",
     description: [
       "Creating a list of customer requirements by doing customer requirement analysis",
       "Building project charter that serves as a foundation for the project",
