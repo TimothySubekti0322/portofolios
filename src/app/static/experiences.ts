@@ -1,15 +1,27 @@
 const Experiences = [
   {
     title: "Software Engineer",
+    company: "Grab",
+    date: "(September 2024 - Ongoing)",
+    description: [
+      "Technology Used : Python, Go, Terraform, Docker, CI",
+      "Developing a Python SDK for serving backend service within machine learning pipeline",
+      "Implemented automated deployment pipelines for the Python SDK using GitLab CI/CD",
+      "Updated backend service configurations using Terraform",
+      "Worked on Go-based backend services",
+      "Implemented unit tests to ensure system functionality and security",
+    ],
+  },
+  {
+    title: "Software Engineer",
     company: "ITB Career Center",
-    date: "(July 2024 - Ongoing)",
+    date: "(July 2024 - September 2024)",
     description: [
       "Technology Used : Go, Next.js, TypeScript, Tailwind CSS, Material UI, PostgreSQL",
       "Developed RESTful API using Go",
       "Succesfully Designed interactive admin dashboard with MUI for improved user experience",
       "Created responsive ITB Tracer Study page utilizing Tailwind CSS",
       "Engineered reusable components (navbar, footer, sidebar, etc) for consistent UI",
-      "Implemented unit tests to ensure system functionality and security",
     ],
   },
   {
